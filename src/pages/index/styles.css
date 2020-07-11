@@ -1,0 +1,42 @@
+.containerHead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerHead  h1 {
+  font-size: 16px;
+  color: #727272;
+  font-weight: 500;
+}
+
+.containerHead .headButtons {
+  display: flex;
+  align-items: center;
+}
+
+.headButtons button {
+  outline-color: #8eccff;
+}
+
+.headButtons button:last-of-type {
+  margin-left: 10px;
+}
+
+.listType {
+  color: #C9C9C9;
+  transition: filter .2s;
+}
+
+.listType:hover {
+  filter: brightness(0.92);
+}
+
+.filmsList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
