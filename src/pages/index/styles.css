@@ -24,19 +24,80 @@
   margin-left: 10px;
 }
 
-.listType {
+.activeButtonColor {
+  color: #01A3EC;
+}
+.disabledButtonColor {
   color: #C9C9C9;
-  transition: filter .2s;
 }
 
+.listType {
+  transition: filter .2s;
+}
 .listType:hover {
   filter: brightness(0.92);
 }
 
-.filmsList {
+.films {
+  margin-top: 40px;
+}
+
+.films li {
+  list-style: none;
+}
+
+/* Grid */
+.filmsGrid {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 40px;
+}
+.gridFilmBox {
+  max-width: 310px;
+  width: 100%;
+  height: 220px;
+  margin-bottom: 30px;
+}
+
+/* List */
+.filmsList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.listFilmBox {
+  width: 100%;
+  height: 92px;
+  margin-bottom: 30px;
+}
+
+
+
+@media (max-width: 1024px) {
+
+  .filmsGrid {
+    justify-content: space-evenly;
+  }
+
+  .headButtons {
+    display: none !important;
+  }
+
+
+
+  /* List */
+  .filmsList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .listFilmBox {
+    max-width: 310px;
+    width: 100%;
+    height: 220px;
+    margin-bottom: 30px;
+  }
 }

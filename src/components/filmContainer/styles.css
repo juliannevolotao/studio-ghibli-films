@@ -1,0 +1,97 @@
+.filmBox {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  justify-content: space-between;
+  transition: transform .3s;
+  cursor: pointer;
+}
+
+.filmBox:hover {
+  transform: scale(.99);
+}
+
+.filmBox h3 {
+  color: #01A3EC;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.filmBox .filmDescrip {
+  font-size: 14px;
+  color: #989898;
+  line-height: 19px;
+}
+
+.directorContent {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.directorContent p {
+  color: #B9B9B9;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.directorContent h5 {
+  color: #727272;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+/* List */
+
+.filmBoxRow {
+  flex-direction: row;
+  align-items: center;
+}
+.filmBoxRow h3 {
+  font-size: 18px;
+  max-width: 200px
+}
+.filmBoxRow .filmDescrip {
+  width: calc(80% - 200px);
+  font-size: 13px;
+  line-height: 14px;
+}
+.filmBoxRow .directorContent p {
+  font-size: 13px;
+}
+.filmBoxRow .directorContent h5 {
+  font-size: 15px;
+  text-align: right;
+}
+
+
+@media (max-width: 1024px) {
+
+  .filmBoxRow {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .filmBoxRow h3 {
+    font-size: 18px;
+    max-width: auto;
+  }
+  .filmBoxRow .filmDescrip {
+    width: auto;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .filmBoxRow .directorContent p {
+    font-size: 14px;
+  }
+  .filmBoxRow .directorContent h5 {
+    font-size: 16px;
+    text-align: right;
+  }
+}
