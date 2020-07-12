@@ -19,12 +19,12 @@
 
 .filmBox h3 {
   color: #01A3EC;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
 .filmBox .filmDescrip {
-  font-size: 14px;
+  font-size: 0.87rem;
   color: #989898;
   line-height: 19px;
 }
@@ -37,13 +37,13 @@
 
 .directorContent p {
   color: #B9B9B9;
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 500;
 }
 
 .directorContent h5 {
   color: #727272;
-  font-size: 17px;
+  font-size: 1.06rem;
   font-weight: 500;
 }
 
@@ -55,19 +55,19 @@
   align-items: center;
 }
 .filmBoxRow h3 {
-  font-size: 18px;
+  font-size: 1.12rem;
   max-width: 200px
 }
 .filmBoxRow .filmDescrip {
   width: calc(80% - 200px);
-  font-size: 13px;
+  font-size: 0.81rem;
   line-height: 14px;
 }
 .filmBoxRow .directorContent p {
-  font-size: 13px;
+  font-size: 0.81rem;
 }
 .filmBoxRow .directorContent h5 {
-  font-size: 15px;
+  font-size: 0.93rem;
   text-align: right;
 }
 
@@ -79,19 +79,19 @@
     align-items: unset;
   }
   .filmBoxRow h3 {
-    font-size: 18px;
+    font-size: 1.12rem;
     max-width: auto;
   }
   .filmBoxRow .filmDescrip {
     width: auto;
-    font-size: 14px;
+    font-size: 0.87rem;
     line-height: 19px;
   }
   .filmBoxRow .directorContent p {
-    font-size: 14px;
+    font-size: 0.87rem;
   }
   .filmBoxRow .directorContent h5 {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: right;
   }
 }

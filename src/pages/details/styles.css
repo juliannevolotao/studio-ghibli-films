@@ -1,0 +1,177 @@
+.detailsHead {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.detailsHead h2 {
+  font-size: 0.87rem;
+  color: #727272;
+  font-weight: normal;
+  margin-right: 5px;
+  cursor: pointer;
+  padding: 2px;
+  border-bottom: 1px solid transparent;
+  transition: all .3s;
+}
+
+.detailsHead h2:hover {
+  border-bottom: 1px solid #9e9e9e;
+}
+
+.detailsHead span {
+  color: #01A3EC;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.filmTitle {
+  color: #727272;
+  font-size: 1.62rem;
+  margin-bottom: 20px;
+}
+
+.filmInfo {
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.filmInfo li {
+  margin-right: 20px;
+  list-style: none;
+  display: flex;
+  font-weight: 500;
+  align-items: flex-end;
+  padding: 0 20px 0 0;
+  border-right: 1px solid #A1A1A1;
+}
+
+.filmInfo li:last-of-type {
+  border: none;
+}
+
+.filmInfo li h3 {
+  font-size: 0.87rem;
+  color: #A1A1A1;
+
+}
+
+.filmInfo li p {
+  margin-left: 10px;
+  color: #01A3EC;
+  font-size: 1rem;
+}
+
+
+.detailsFilmDescrip {
+  width: 100%;
+  background-color: #FDFDFD;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.descripContent {
+  width: 65%;
+  border-right: 1px solid #A1A1A1;
+  padding-right: 30px;
+}
+.descripContent h3 {
+ font-size: 0.87rem;
+ color: #A1A1A1;
+ font-weight: 500;
+ margin-bottom: 20px;
+}
+.descripContent p {
+  font-size: 1rem;
+  color: #727272;
+  line-height: 22px;
+}
+
+.filmScore {
+  padding-left: 30px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.roundGraph {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  border: 1px solid #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.roundGraph h4 {
+  font-size: 3.12rem;
+  color: #01A3EC;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.roundGraph p {
+  width: 70%;
+  font-size: 0.87rem;
+  font-weight: 500;
+  color: #B9B9B9;
+  text-align: center;
+}
+
+.filmCast {
+  padding-top: 30px;
+}
+
+.filmCast h5 {
+  font-size: 0.87rem;
+  color: #A1A1A1;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.filmCast ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filmCast li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .filmInfo {
+    display: flex;
+    flex-direction: column;    
+  }
+  .filmInfo li {
+    margin-bottom: 12px;
+    border: none;
+  }
+
+  .detailsFilmDescrip {
+    flex-direction: column;
+  }
+  .descripContent {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #EDEDED;
+    padding: 0 0 30px;
+    margin-bottom: 30px;
+  }
+
+  .filmScore {
+    padding: 0;
+    width: 100%;
+  }
+
+  .filmCast ul {
+    justify-content: space-around;
+  }
+}

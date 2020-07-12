@@ -16,21 +16,33 @@ export default function Details() {
   const history = useHistory();
 
   useEffect(() => {
+    if(localStorage.getItem("listDisplayGrid")) {
+      localStorage.getItem("listDisplayGrid") === 'true' ? setIsGrid(true) : setIsGrid(false);
+    } else {
+      localStorage.setItem("listDisplayGrid", isGrid);
+    }
+
     const fetchFilms = async () => {
+     
+
       try {
         let response = await api.get("films");
         setFilms(response.data);
-        console.log(response.data);
       } catch (err) {
         console.log(err);
       }
     };
 
     fetchFilms();
-  }, []);
+  }, [isGrid]);
 
   const handleSeeDetails = (id) => {
     history.push(`/details/${id}`);
+  }
+
+  const handleButtonList = (grid) => {
+    setIsGrid(grid);
+    localStorage.setItem("listDisplayGrid", grid);
   }
 
   return (
@@ -39,13 +51,13 @@ export default function Details() {
         <div className="containerHead">
           <h1> All films </h1>
           <div className="headButtons">
-            <button onClick={() => setIsGrid(true)}>
+            <button onClick={() => handleButtonList(true)}>
               <FaTh
                 size={18}
                 className={`listType ${isGrid ? "activeButtonColor" : "disabledButtonColor"}`}
               />
             </button>
-            <button onClick={() => setIsGrid(false)}>
+            <button onClick={() => handleButtonList(false)}>
               <FaThList
                 size={18}
                 className={`listType ${isGrid ? "disabledButtonColor" : "activeButtonColor"}`}
