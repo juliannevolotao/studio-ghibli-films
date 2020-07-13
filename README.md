@@ -1,13 +1,22 @@
-<h4> :movie_camera: SG Films :movie_camera: </h4>
+<h4 align="center"> :movie_camera: SG Films  </h4>
+
+<br> 
+
 <p align="center">
-  <img src="./.github/logoSGFilmsDark" alt="Logo SGFilms" />
+  <img src="./.github/logoSGFilmsDark.png"  alt="Logo SGFilms" />
 </p> 
+
+<br> 
 
 <p align="center"> 
   :computer: <a href="#computer-tecnologias"> Tecnologias </a> &nbsp; &nbsp; | &nbsp; &nbsp; 
   :speech_balloon: <a href="#speech_balloon-api"> Api </a> &nbsp; &nbsp; | &nbsp; &nbsp; 
-  :vhs: <a href="#vhs-iniciando-a-aplicaçao"> Iniciando a aplicação </a> 
+  :vhs: <a href="#vhs-iniciando-a-aplicação"> Iniciando a aplicação </a> 
 </p>
+
+<p align="center"> Lista de filmes do studio Ghibli. </p>
+
+<br>
 
 ## :computer: Tecnologias
 - [Reactjs](https://pt-br.reactjs.org/), [Create React App](https://github.com/facebook/create-react-app)
