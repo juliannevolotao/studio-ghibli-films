@@ -1,0 +1,31 @@
+.cast__container {
+  width: 180px;
+  height: 120px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  background-color: #FDFDFD;
+}
+
+.cast__container h6 {
+  font-weight: bold;
+  color: #727272;
+  font-size: 16px;
+}
+
+.cast__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cast__info p {
+  color: #959595;
+  font-size: 14px;
+}
+.cast__info p:first-of-type {
+  padding-right: 10px;
+  /* border-right: 1px solid #959595; */
+}
