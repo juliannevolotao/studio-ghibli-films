@@ -18,7 +18,7 @@
 
 <br>
 
-<p> [SG Films no Netlify](https://sgfilms.netlify.app/) </p>
+- [SG Films no Netlify](https://sgfilms.netlify.app/) 
 
 <br>
 
