@@ -9,9 +9,9 @@ export default function CastContainer({
 }) {
 
   return (
-    <div className="castContainer">
+    <div className="cast__container">
       <h6> {name} </h6>
-      <div className="personInfo">
+      <div className="cast__info">
         <p> {gender !== 'NA' ? gender : ""} </p>
         <p> {Number(age) ? age + " years" : ""} </p>
       </div>

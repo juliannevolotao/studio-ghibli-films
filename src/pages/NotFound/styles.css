@@ -1,0 +1,50 @@
+.notfound {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.notfound__content {
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notfound__content h2 {
+  font-size: 9rem;
+  color: #c7c7c7;
+  font-weight: bold;
+}
+.notfound__content h1 {
+  font-size: 1.40rem;
+  color: #727272;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+
+.notfound__button {
+  color: #727272;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 10px 0;
+  border: 1px solid #01A3EC;
+  border-radius: 25px;
+  transition: all .3s;
+}
+
+.notfound__button:hover {
+  transform: scale(0.98);
+}
+
+.notfound__button svg {
+  margin-right: 10px;
+}

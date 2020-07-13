@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./styles.css";
-import CastContainer from "../../components/castContainer";
+import CastContainer from "../../components/CastContainer";
 
 import { useParams, useHistory } from "react-router-dom";
 
@@ -19,8 +19,9 @@ export default function Details() {
       try {
         let response = await api.get(`/films/${filmID}`);
         setFilmData(response.data);
+        window.scrollTo(0, 0);
       } catch (err) {
-        history.push("/");
+        history.push("/error");
       }
     };
 
@@ -52,14 +53,14 @@ export default function Details() {
 
   return (
     <main>
-      <section className="marginContainer">
-        <div className="detailsHead">
-          <h2 onClick={() => history.goBack()}> All films &gt; </h2>
-          <span> {filmData.title} </span>
+      <section className="container__details">
+        <div className="details__head">
+          <h2 className="details__head__title" onClick={() => history.goBack()}> All films &gt; </h2>
+          <span className="details__head__subtitle"> {filmData.title} </span>
         </div>
 
-        <h1 className="filmTitle"> {filmData.title} </h1>
-        <ul className="filmInfo">
+        <h1 className="details__film__title"> {filmData.title} </h1>
+        <ul className="details__film__info">
           <li>
             <h3> Director: </h3>
             <p> {filmData.director} </p>
@@ -74,21 +75,21 @@ export default function Details() {
           </li>
         </ul>
 
-        <article className="detailsFilmDescrip">
-          <div className="descripContent">
+        <article className="details__film">
+          <div className="details__film__descrip">
             <h3>Description</h3>
             <p> {filmData.description} </p>
           </div>
 
-          <div className="filmScore">
-            <div className="roundGraph">
+          <div className="details__film__score">
+            <div className="film__score__content">
               <h4> {filmData.rt_score} </h4>
               <p> Rotten Tomatoes score </p>
             </div>
           </div>
         </article>
 
-        <article className="filmCast">
+        <article className="details__film__cast">
           <h5> Cast </h5>
           <ul>
             {castData.map((person) => (

@@ -9,7 +9,7 @@ export default function Header(){
   let history = useHistory();
 
   return (
-    <nav>
+    <nav className="header__container">
       <ul>
         <img onClick={() => history.push("/")} src={LogoImage} alt="Logo SG Films" />
       </ul>

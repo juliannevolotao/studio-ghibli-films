@@ -22,10 +22,10 @@ export default function FilmContainer({
 
 
   return (
-    <div className={`filmBox ${isGrid ? "" : "filmBoxRow" }`}>
+    <div className={`film__container ${isGrid ? "" : "film__display__row" }`}>
       <h3> {title} </h3>
-      <p className="filmDescrip"> {shortDescrip} </p>
-      <div className="directorContent">
+      <p className="film__description"> {shortDescrip} </p>
+      <div className="film__director">
         <p > Director </p>
         <h5> {director} </h5>
       </div>
