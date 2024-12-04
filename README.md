@@ -35,7 +35,7 @@
 
 ## :vhs: Iniciando a aplicação 
 
-**1.** Clone o repositório para sua máquina usando o comando `git clone https://github.com/juliannevolotao/SGFilms.git` no local desejado através do terminal. Em seguida acesse a pasta do projeto com o comando `cd SGFilms`.
+**1.** Clone o repositório para sua máquina usando o comando `git clone https://github.com/juliannevolotao/studio-ghibli-films.git` no local desejado através do terminal. Em seguida acesse a pasta do projeto com o comando `cd studio-ghibli-films`.
 
 <br>
 
